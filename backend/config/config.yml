@@ -1,0 +1,16 @@
+app:
+  name: gogogo
+  port: :3000
+
+database:
+  dsn: root:tinki2307@tcp(127.0.0.1:3306)/gogogo_db?charset=utf8mb4&parseTime=True&loc=Local
+  max_idle_conns: 10
+  max_open_conns: 100
+
+auth:
+  jwt_secret: chaojixinren
+  token_ttl_hours: 72
+
+cors:
+  allow_origins:
+    - http://localhost:5173
